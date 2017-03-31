@@ -1,4 +1,8 @@
+<div>
 
 <app-new-log (newMealSender)="addMeal($event)"></app-new-log>
-<app-meal-list [childMealList]="mealList"></app-meal-list>
+
+<app-meal-list  (clickSender)="editMeal($event)" [childMealList]="mealList"></app-meal-list>
+
 <app-edit-log [childSelectedMeal]="selectedMeal" (doneButtonClickedSender)="finishedEditing()"></app-edit-log>
+</div>

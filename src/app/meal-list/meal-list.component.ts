@@ -16,6 +16,8 @@ export class MealListComponent implements OnInit {
    this.clickSender.emit(mealToEdit);
   }
 
+
+
   constructor() { }
 
   ngOnInit() {
