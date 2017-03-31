@@ -53,7 +53,7 @@
 
 
     * create components
-        - new-form component
+        - new-log component
         - edit component
         - views.pipe.ts ( create a pipe filter )
 
@@ -67,7 +67,7 @@
                 - Name(string)
                 - Details(string)
                 - Calories(number)
-                
+
     * link up pages to one another
 
 
