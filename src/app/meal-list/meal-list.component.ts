@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Meal } from './../meal-tracker.model';
 
 
@@ -8,6 +8,8 @@ import { Meal } from './../meal-tracker.model';
   styleUrls: ['./meal-list.component.css']
 })
 export class MealListComponent implements OnInit {
+
+    @Input() childMealList: Meal[];
 
   constructor() { }
 

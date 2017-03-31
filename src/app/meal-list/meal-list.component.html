@@ -1,3 +1,7 @@
-<p>
-  meal-list works!
-</p>
+<ul *ngFor="let meal of childMealList">
+  <li >{{meal.name}}</li>
+  <ul>
+    <li>{{meal.detail}}</li>
+    <li>{{meal.calories}}</li>
+  </ul>
+</ul>
