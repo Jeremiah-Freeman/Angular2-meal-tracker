@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Meal } from './../meal-tracker.model';
 
 @Component({
@@ -7,6 +7,10 @@ import { Meal } from './../meal-tracker.model';
   styleUrls: ['./edit-log.component.css']
 })
 export class EditLogComponent implements OnInit {
+
+  
+
+
 
   constructor() { }
 
