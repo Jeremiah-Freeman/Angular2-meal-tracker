@@ -8,7 +8,7 @@
       <input #newDetail id="Detail" class="form-control" type="text" name="brand"><br>
       <label for="price">Calories:</label>
       <input #newCalories id="Calories" class="form-control" type="text" name="price"><br>
-      <button (click="submitForm(newName.value, newDetail.value, newCalories.value)" class="addbutton" class="btn btn-caution btn-xs">add</button>
+      <button (click)="submitForm(newName.value, newDetail.value, newCalories.value); newName.value=''; newDetail.value=''; newCalories.value='';" >add</button>
     </form>
   </div>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter} from '@angular/core';
 import { Meal } from './../meal-tracker.model';
 
 @Component({
@@ -7,8 +7,12 @@ import { Meal } from './../meal-tracker.model';
   styleUrls: ['./new-log.component.css']
 })
 export class NewLogComponent implements OnInit {
+
+  @Output() newMealSender = new EventEmitter();
+
   submitForm(name: string, detail: string, calories: number) {
       var newMealToAdd: Meal = new Meal(name, detail, calories);
+      this.newMealSender.emit(newMealToAdd);
     }
 
   constructor() { }

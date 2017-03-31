@@ -1,4 +1,4 @@
 
 <app-edit-log></app-edit-log>
-<app-new-log></app-new-log>
+<app-new-log (newMealSender)="addMeal($event)"></app-new-log>
 <app-meal-list [childMealList]="mealList"></app-meal-list>
