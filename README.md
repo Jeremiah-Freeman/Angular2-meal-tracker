@@ -6,35 +6,34 @@
 
   Example:
 
-  ---------
-  Name: "Pad Thai"
-  Details: "No meat, side of peanut sauce, extra veggies"
-  Calories: 298
+    - Name: "Pad Thai"
+    - Details: "No meat, side of peanut sauce, extra veggies"
+    - Calories: 298
   ---------
 
+    - Name: "Kure Juice (strawberry)"
+    - Details: "16oz, with extra strawberries"
+    - Calories: 117
   ---------
-  Name: "Kure Juice (strawberry)"
-  Details: "16oz, with extra strawberries"
-  Calories: 117
-  ---------
-## Planning
-  1. Configuration/dependencies:
+##  Specs:
+  1. user opens site and fills in an input form |
+  - Name: "Pad Thai"
+  - Details: "No meat, side of peanut sauce, extra veggies"
+  - Calories: 298
+
+  2. user can view all foods they have logged for the day
+
+  3. user has an optional drop-down menu that allows them to see a filtered (pipe) list of 'all foods', 500 calories or less, 500 calories or more
+
+  4. user has the option to cheat, I mean edit the calories, description, and name of the food they logged (all foods)
+
+# Planning
+    Configuration/dependencies:
     - use Angluar2 CLI to create new project
     - enter project folder
     - run install CLI code
     - open server using 'ng s --open'
 
-##  Specs:
-    1. user opens site and fills in an input form |
-      - Name: "Pad Thai"
-      - Details: "No meat, side of peanut sauce, extra veggies"
-      - Calories: 298
-
-    2. user can view all foods they have logged for the day
-
-    3. user has an optional drop-down menu that allows them to see a filtered (pipe) list of 'all foods', 500 calories or less, 500 calories or more
-
-    4. user has the option to cheat, I mean edit the calories, description, and name of the food they logged (all foods)
 
 
 ##  Integration:
@@ -52,11 +51,6 @@
 ####  Project Setup:
 
 
-    * create Meal Class with constructor
-        - properties:
-            - Name(string)
-            - Details(string)
-            - Calories(number)
 
     * create components
         - new-form component
@@ -68,29 +62,31 @@
             - make sure that model is linked properly to the x.component.ts pages for proper access.
                 - app / new-form / views.pipe.ts
 
+                * create Meal Class with constructor
+                - properties:
+                - Name(string)
+                - Details(string)
+                - Calories(number)
+                
     * link up pages to one another
 
 
+    UX/UI:
+      - Add custom styling / form placement.
+      - Bootstrap or jQuery UI( try jQuery UI to improve understanding ).
+      - Add image to README.md(icon size)
 
 
+    FreshenUp:
+      - Clean up unneeded code or old code.
+      - Fix indentation.
+      - Make it tidy.
 
 
-  UX/UI:
-    - Add custom styling / form placement.
-    - Bootstrap or jQuery UI( try jQuery UI to improve understanding ).
-    - Add image to README.md(icon size)
-
-
-  FreshenUp:
-    - Clean up unneeded code or old code.
-    - Fix indentation.
-    - Make it tidy.
-
-
-  Last Call:
-    - Pass through objectives one last time.
-    - Push one last time.
-    - Submit to Epicodus.
+    Last Call:
+      - Pass through objectives one last time.
+      - Push one last time.
+      - Submit to Epicodus.
 
 
 ## Known Bugs
