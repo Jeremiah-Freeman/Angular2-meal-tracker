@@ -3,7 +3,8 @@ import { Meal } from './../meal-tracker.model';
 
 
 @Pipe({
-
+  name: "calories",
+  pure: false
 })
 
 

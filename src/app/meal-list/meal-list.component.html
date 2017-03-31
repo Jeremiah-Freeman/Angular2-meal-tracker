@@ -1,4 +1,4 @@
-<ul *ngFor="let meal of childMealList">
+<ul *ngFor="let meal of childMealList | CaloriesPipe">
   <li >{{meal.name}}</li>
   <ul>
     <li>{{meal.detail}}</li>
@@ -6,3 +6,9 @@
     <button (click)="editButtonHasBeenClicked(meal)">edit</button>
   </ul>
 </ul>
+
+<select>
+    <option value="allLogs">All logs</option>
+    <option value="lessCals">Less than 500cal</option>
+    <option value="moreCals">More than 500cal</option>    
+</select>
