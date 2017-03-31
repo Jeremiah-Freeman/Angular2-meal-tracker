@@ -16,6 +16,12 @@ export class MealListComponent implements OnInit {
    this.clickSender.emit(mealToEdit);
   }
 
+  filterByCalories: string = "allLogs";
+
+  onChange(optionFromMenu) {
+    this.filterByCalories = optionFromMenu;
+  }
+
 
 
   constructor() { }

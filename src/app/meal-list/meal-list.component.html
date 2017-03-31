@@ -1,4 +1,4 @@
-<ul *ngFor="let meal of childMealList | CaloriesPipe">
+<ul *ngFor="let meal of childMealList | calories:filterByCalories">
   <li >{{meal.name}}</li>
   <ul>
     <li>{{meal.detail}}</li>
@@ -7,8 +7,8 @@
   </ul>
 </ul>
 
-<select>
+<select (change)="onChange($event.target.value)">
     <option value="allLogs">All logs</option>
     <option value="lessCals">Less than 500cal</option>
-    <option value="moreCals">More than 500cal</option>    
+    <option value="moreCals">More than 500cal</option>
 </select>
