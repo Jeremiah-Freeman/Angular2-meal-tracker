@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { NewLogComponent } from './new-log/new-log.component';
 import { EditLogComponent } from './edit-log/edit-log.component';
 import { MealListComponent } from './meal-list/meal-list.component';
+import { CaloriesPipe } from './calories.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewLogComponent,
     EditLogComponent,
-    MealListComponent
+    MealListComponent,
+    CaloriesPipe
   ],
   imports: [
     BrowserModule,
