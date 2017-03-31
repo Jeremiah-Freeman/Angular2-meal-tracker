@@ -54,7 +54,7 @@
 
     * create components
         - new-log component
-        - edit component
+        - edit-log component
         - views.pipe.ts ( create a pipe filter )
 
     * create new model
