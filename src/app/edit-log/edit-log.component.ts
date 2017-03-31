@@ -8,9 +8,12 @@ import { Meal } from './../meal-tracker.model';
 })
 export class EditLogComponent implements OnInit {
 
+  @Input() childSelectedMeal: Meal;
+  @Output() doneButtonClickedSender = new EventEmitter();
   
-
-
+  doneButtonClicked() {
+    this.doneButtonClickedSender.emit();
+  }
 
   constructor() { }
 

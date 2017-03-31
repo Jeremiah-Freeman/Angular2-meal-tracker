@@ -1,14 +1,15 @@
 <div class="container">
-  <div class="well">
-    <h2>edit-log</h2>
+  <div class="well" *ngIf="childSelectedMeal">
+    <h2>edit-log for {{meal.name}}</h2>
+    <p>Hello {{childSelectedMeal.done}} </p>
     <form>
       <label for="name">Name:</label>
-      <input  id="name" class="form-control" type="text" name="name"><br>
-      <label for="brand">Detail:</label>
-      <input  id="Detail" class="form-control" type="text" name="brand"><br>
-      <label for="price">Calories:</label>
-      <input  id="Calories" class="form-control" type="text" name="price"><br>
-      <button>edit</button>
+      <input [(ngModel)]="childSelectedMeal.name" id="name" class="form-control" type="text" name="name"><br>
+      <label for="Detail">Detail:</label>
+      <input [(ngModel)]="childSelectedMeal.detail" id="Detail" class="form-control" type="text" name="brand"><br>
+      <label for="Calories">Calories:</label>
+      <input [(ngModel)]="childSelectedMeal.calories" id="Calories" class="form-control" type="text" name="price"><br>
+      <button (click)="finishedEditing()" (click)="doneButtonClicked()">done</button>
     </form>
   </div>
 </div>

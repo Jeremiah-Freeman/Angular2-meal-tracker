@@ -13,8 +13,19 @@ export class AppComponent {
     new Meal('Pad Thai', 'No meat, side of peanut sauce, extra veggies', 940),
     new Meal('Pho Soup', 'Veggie broth with no meat. Extra veggies. Side of salad roles', 367)];
 
-    addMeal(newMealFromChild: Meal) {
+    selectedMeal = null;
+
+  addMeal(newMealFromChild: Meal) {
     this.mealList.push(newMealFromChild);
   }
+
+  editMeal(clickedMeal) {
+    this.selectedMeal = clickedMeal;
+  }
+
+  finishedEditing() {
+    this.selectedMeal = null;
+  }
+
 
 }

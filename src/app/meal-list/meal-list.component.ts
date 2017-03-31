@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Meal } from './../meal-tracker.model';
 
 
@@ -10,6 +10,11 @@ import { Meal } from './../meal-tracker.model';
 export class MealListComponent implements OnInit {
 
     @Input() childMealList: Meal[];
+    @Output() clickSender = new EventEmitter();
+
+    editButtonHasBeenClicked(mealToEdit: Meal) {
+   this.clickSender.emit(mealToEdit);
+  }
 
   constructor() { }
 
