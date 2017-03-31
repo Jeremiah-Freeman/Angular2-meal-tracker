@@ -8,6 +8,15 @@
 # dependencies
 /node_modules
 
+node_modules/
+npm-debug.log
+bower_components/
+app/*.js
+app/*.js.map
+build/
+typings/
+
+
 # IDEs and editors
 /.idea
 .project
