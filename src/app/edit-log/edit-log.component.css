@@ -1,8 +1,13 @@
 #editbox {
   position: absolute;
-  margin-left: 45%;
+  margin-left: 46%;
+  margin-top: 4.5%;
 }
 
 #editform {
   box-shadow:         40px 40px 50px 40px #ccc;
+}
+
+h4 {
+  text-align: center;
 }

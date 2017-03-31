@@ -18,6 +18,11 @@
 }
 
 #filterbox {
+
+}
+
+.selectbox {
   position: absolute;
-  margin-left: 50%;
+  margin-left: 20%;
+  margin-bottom: 5%;
 }
