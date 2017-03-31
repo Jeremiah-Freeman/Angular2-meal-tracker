@@ -1,0 +1,23 @@
+.ui-button {
+  background-color: red;
+}
+
+#mealistwell {
+  background-color: #CCCCCC;
+}
+
+#buttonedit {
+  position: absolute;
+  margin-left: 38%;
+  margin-top: 50px;
+
+}
+
+#hrmargin {
+  margin-right: 50%;
+}
+
+#filterbox {
+  position: absolute;
+  margin-left: 50%;
+}

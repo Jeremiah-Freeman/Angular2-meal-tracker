@@ -1,14 +1,20 @@
+<div id="mealistwell"class="well">
+
 <ul *ngFor="let meal of childMealList | calories:filterByCalories">
+  <button id="buttonedit" class="btn btn-info btn-xs"  (click)="editButtonHasBeenClicked(meal)">edit</button>
   <li >{{meal.name}}</li>
   <ul>
     <li>{{meal.detail}}</li>
     <li>{{meal.calories}}</li>
-    <button (click)="editButtonHasBeenClicked(meal)">edit</button>
+    <hr id="hrmargin">
   </ul>
 </ul>
 
-<select (change)="onChange($event.target.value)">
-    <option value="allLogs">All logs</option>
-    <option value="lessCals">Less than 500cal</option>
-    <option value="moreCals">More than 500cal</option>
+<label> narrow your search</label>
+<select   id="filterbox" class="selectpicker" data-live-search-style="startsWith" data-live-search="true" (change)="onChange($event.target.value)">
+    <option id="selectbox" data-tokens="Kure" value="allLogs">All logs</option>
+    <option data-tokens="ketchup mustard" value="lessCals">Less than 500cal</option>
+    <option data-tokens="ketchup mustard" value="moreCals">More than 500cal</option>
 </select>
+
+</div>

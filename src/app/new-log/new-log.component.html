@@ -1,14 +1,18 @@
 <div class="container">
-  <div class="well">
-    <h2>Log-it-Down</h2>
-    <form>
-      <label for="name">Name:</label>
-      <input #newName id="name" class="form-control" type="text" name="name"><br>
-      <label for="brand">Detail:</label>
-      <input #newDetail id="Detail" class="form-control" type="text" name="brand"><br>
-      <label for="price">Calories:</label>
-      <input #newCalories id="Calories" class="form-control" type="text" name="price"><br>
-      <button (click)="submitForm(newName.value, newDetail.value, newCalories.value); newName.value=''; newDetail.value=''; newCalories.value='';" >add</button>
-    </form>
+  <div id="logit">
+    <div class="well">
+
+        <h2 id="newlogtitle">Logular</h2>
+        <form class="group-control">
+          <label for="name">Name:</label>
+          <input #newName id="name" class="form-control" type="text" name="name"><br>
+          <label for="detail">Detail:</label>
+          <input #newDetail id="Detail" class="form-control" type="text" name="detail"><br>
+          <label for="calories">Calories:</label>
+          <input #newCalories id="Calories" class="form-control" type="text" name="calories"><br>
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+  <i class="material-icons" (click)="submitForm(newName.value, newDetail.value, newCalories.value); newName.value=''; newDetail.value=''; newCalories.value='';" >add</i></button>
+        </form>
+    </div>
   </div>
 </div>

@@ -1,17 +1,27 @@
-<div *ngIf="childSelectedMeal">
-<div class="container">
-    <h2>edit log for {{childSelectedMeal.name}}</h2>
-    <form>
-      <label for="name">Name:</label>
-      <input [(ngModel)]="childSelectedMeal.name" id="name" class="form-control" type="text" name="name"><br>
+<div id="editbox" *ngIf="childSelectedMeal">
+  <div class="row" class="container">
+    <div class="col-md-6">
 
-      <label for="Detail">Detail:</label>
-      <input [(ngModel)]="childSelectedMeal.detail" id="Detail" class="form-control" type="text" name="brand"><br>
+      <div id="editform" class="well">
 
-      <label for="Calories">Calories:</label>
-      <input [(ngModel)]="childSelectedMeal.calories" id="Calories" class="form-control" type="text" name="price"><br>
+        <h2>edit log for {{childSelectedMeal.name}}</h2>
+        <form  class="group-control">
+          <label for="name">Name:</label>
+          <input [(ngModel)]="childSelectedMeal.name" id="name" class="form-control" type="text" name="name"><br>
 
-      <button (click)="doneButtonClicked()">done</button>
-    </form>
+          <label for="Detail">Detail:</label>
+          <input [(ngModel)]="childSelectedMeal.detail" id="Detail" class="form-control" type="text" name="brand"><br>
+
+          <label for="Calories">Calories:</label>
+          <input [(ngModel)]="childSelectedMeal.calories" id="Calories" class="form-control" type="text" name="price"><br>
+
+          <button class="mdl-button  mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+            <i class="material-icons"
+            (click)="doneButtonClicked()">done</i></button>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
   </div>
-</div>
