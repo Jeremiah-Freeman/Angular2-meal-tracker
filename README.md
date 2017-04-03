@@ -93,6 +93,15 @@
 
 There are no known bugs.
 
+
+## How to view Instructions
+
+- clone down repo from github ( "https://github.com/jaythinkshappiness/Angular2-meal-tracker" )
+    - cd in to repo
+        - git init
+        - install the CLI (in or out of folder) - (npm install -g @angular/cli)
+        - ng s(serve) --open
+
 ## Support and contact details
 
 If you notice bugs or would like to contribute in any way please contact me at jaythinkshappiness@gmail.com
