@@ -15,17 +15,17 @@
         </div>
       </form>
       <form action="#">
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <input class="mdl-textfield__input" #newCalories type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
-        <label class="mdl-textfield__label" for="sample4">calorie intake. . .</label>
-        <span class="mdl-textfield__error">oops! numbers only yo!</span>
-      </div>
-      <button  id="addbutton" (click)="submitForm(newName.value, newDetail.value, newCalories.value); newName.value=''; newDetail.value=''; newCalories.value='';" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" #newCalories type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+          <label class="mdl-textfield__label" for="sample4">calorie intake. . .</label>
+          <span class="mdl-textfield__error">oops! numbers only yo!</span>
+        </div>
+        <button  id="addbutton" (click)="submitForm(newName.value, newDetail.value, newCalories.value); newName.value=''; newDetail.value=''; newCalories.value='';" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
           <i class="material-icons">add</i>
         </button>
-        </form>
-      </div>
-      <hr>
-      <br>
+      </form>
     </div>
+    <hr>
+    <br>
   </div>
+</div>

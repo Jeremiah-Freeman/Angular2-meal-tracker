@@ -1,12 +1,11 @@
 <div id="appbuffer" class="container">
-
 <div class="well">
 
 <app-new-log (newMealSender)="addMeal($event)"></app-new-log>
 
 <app-edit-log [childSelectedMeal]="selectedMeal" (doneButtonClickedSender)="finishedEditing()"></app-edit-log>
+
 <app-meal-list  (clickSender)="editMeal($event)" [childMealList]="mealList"></app-meal-list>
 
 </div>
-
 </div>

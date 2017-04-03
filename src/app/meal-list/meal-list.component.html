@@ -1,15 +1,13 @@
+
 <div id="mealistwell"class="well">
   <ul *ngFor="let meal of childMealList | calories:filterByCalories">
-    <button id="buttonedit" (click)="editButtonHasBeenClicked(meal)" class="mdl-button mdl-button--raised mdl-button--colored">
-      <i class="material-icons"  >edit</i>
-    </button>
+    <button id="buttonedit" (click)="editButtonHasBeenClicked(meal)" class="mui-btn mui-btn--small mui-btn--primary mui-btn--fab">+</button>
     <li><h6>{{meal.name}}</h6></li>
     <ul>
       <li type="disc">{{meal.detail}}</li>
       <li type="disc">{{meal.calories}}</li>
       <hr id="hrmargin">
     </ul>
-    <hr>
   </ul>
   <select   id="filterbox" class="selectpicker" data-live-search-style="startsWith" data-live-search="true" (change)="onChange($event.target.value)">
     <option id="selectbox" data-tokens="Kure" value="allLogs">All logs</option>
